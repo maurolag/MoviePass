@@ -3,20 +3,14 @@ namespace Models;
 
 class User
 {
-<<<<<<< HEAD
         private $idUser;
         private $email;
         private $userName;
-=======
-        private $email;
-        private $user;
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
         private $password;
         private $birthdate;
         private $gender;
         private $isAdmin;
         private $changedPassword;
-<<<<<<< HEAD
         private $photo;
 
         public function __construct($email, $userName, $password, $birthdate, $gender, $photo)
@@ -33,16 +27,6 @@ class User
         public function getIdUser()
         {
                 return $this->idUser;
-=======
-
-        public function __construct($email, $user, $password, $birthdate, $gender)
-        {
-                $this->email = $email;
-                $this->user = $user;
-                $this->password = $password;
-                $this->birthdate = $birthdate;
-                $this->gender = $gender;
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
         }
 
         /**
@@ -54,7 +38,6 @@ class User
         }
 
         /**
-<<<<<<< HEAD
          * Set the value of email
          *
          * @return  self
@@ -84,13 +67,6 @@ class User
                 $this->userName = $userName;
 
                 return $this;
-=======
-         * Get the value of user
-         */ 
-        public function getUser()
-        {
-                return $this->user;
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
         }
 
         /**
@@ -102,7 +78,6 @@ class User
         }
 
         /**
-<<<<<<< HEAD
          * Set the value of password
          *
          * @return  self
@@ -115,8 +90,6 @@ class User
         }
 
         /**
-=======
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
          * Get the value of gender
          */ 
         public function getGender()
@@ -125,7 +98,6 @@ class User
         }
 
         /**
-<<<<<<< HEAD
          * Set the value of gender
          *
          * @return  self
@@ -138,8 +110,6 @@ class User
         }
 
         /**
-=======
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
          * Get the value of birthdate
          */ 
         public function getBirthdate()
@@ -147,7 +117,6 @@ class User
                 return $this->birthdate;
         }
 
-<<<<<<< HEAD
          /**
          * Set the value of birthdate
          *
@@ -156,16 +125,6 @@ class User
         public function setBirthdate($birthdate)
         {
                 $this->birthdate = $birthdate;
-=======
-        /**
-         * Set the value of password
-         *
-         * @return  self
-         */ 
-        public function setPassword($password)
-        {
-                $this->password = $password;
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 
                 return $this;
         }
@@ -209,7 +168,6 @@ class User
 
                 return $this;
         }
-<<<<<<< HEAD
 
         /**
          * Get the value of photo
@@ -230,6 +188,4 @@ class User
 
                 return $this;
         }
-=======
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 }

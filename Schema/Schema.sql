@@ -163,22 +163,12 @@ create table Users (
     UserName varchar(50) not null,
     Email varchar(50) not null UNIQUE,
     UserPassword varchar(50) not null,
-<<<<<<< HEAD
-=======
-    IdAddress int not null,
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
     IdGender int not null,
     Birthdate date,
 	IsAdmin bit,
 	ChangedPassword bit,
-<<<<<<< HEAD
     Photo varchar(200),
     constraint Pk_Users primary key (IdUser),
-=======
-    constraint Pk_Users primary key (IdUser),
-    constraint Fk_Address foreign key (IdAddress)
-        references Addresses (IdAddress),
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
     constraint Fk_Gender foreign key (IdGender)
         references Genders (IdGender)
 );

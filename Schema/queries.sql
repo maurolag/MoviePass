@@ -7,16 +7,6 @@ insert into Genders (GenderName)values ('Not binary');
 
 select * from genders; */
 
-<<<<<<< HEAD
-
--- INSERT INTO Users (UserName, Email, UserPassword, IdGender, BirthDate, Photo, IsAdmin, ChangedPassword)
---         VALUES ('Nacho', 'nachote98@gmail.com', '123', 1, null , '/MoviePass/Views/img/man.png', 0, 0);
-
-SELECT * FROM Users
-WHERE Email = 'nachote98@gmail.com' AND UserPassword = '123';
-
--- select * from users;
-=======
 DELIMITER $$
 
 CREATE PROCEDURE GetOrdersByUser(UserId int) 
@@ -50,4 +40,3 @@ GROUP BY(orders.IdOrder) ORDER BY screenings.StartDate ASC;
 END $$ 
 
 DELIMITER ;
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369

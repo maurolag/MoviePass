@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-
-<?php require_once("navbar.php");?>
-=======
 <?php require_once("navbar.php"); ?>
 
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 <body>
     <div class="container">
         <div class="form-group has-search">
@@ -14,62 +9,6 @@
             </div>
         </div>
         <div class="overflow-auto">
-<<<<<<< HEAD
-            <div class="card mb-3">
-                <div class="card-header">
-                    Pedido
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p class="card-text">Cliente: </p><br>
-                            <p class="card-text">Complejo: </p><br>
-                            <p class="card-text">Dirección: </p><br>
-                            <p class="card-text">Sala: </p><br>
-                            <p class="card-text">Fecha: </p><br>
-                            <p class="card-text">Horario: </p><br>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="card-text">Pelicula: </p><br>
-                            <p class="card-text">Butacas: </p><br>
-                            <p class="card-text">Entradas: </p><br>
-                            <p class="card-text">Descuento: </p><br>
-                            <p class="card-text">SubTotal: </p><br>
-                            <p class="card-text">Total: </p><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3">
-                <div class="card-header">
-                    Pedido
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p class="card-text">Cliente: </p><br>
-                            <p class="card-text">Complejo: </p><br>
-                            <p class="card-text">Dirección: </p><br>
-                            <p class="card-text">Sala: </p><br>
-                            <p class="card-text">Fecha: </p><br>
-                            <p class="card-text">Horario: </p><br>
-                        </div>
-                        <div class="col-sm-6">
-                            <p class="card-text">Pelicula: </p><br>
-                            <p class="card-text">Butacas: </p><br>
-                            <p class="card-text">Entradas: </p><br>
-                            <p class="card-text">Descuento: </p><br>
-                            <p class="card-text">SubTotal: </p><br>
-                            <p class="card-text">Total: </p><br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-=======
             <?php foreach ($Orders as $order) { ?>
                 <div class="card mb-3">
                     <div class="card-header">
@@ -100,7 +39,6 @@
         </div>
     </div>
 </body>
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 <style>
     .SearchField {
         width: 20%;

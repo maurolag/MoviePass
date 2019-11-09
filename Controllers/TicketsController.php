@@ -1,18 +1,6 @@
 <?php
 
 namespace Controllers;
-<<<<<<< HEAD
-require_once("BaseController.php");
-
-class TicketsController extends BaseController
-{
-    public function View(){
-        require_once(VIEWS_PATH . "TicketsView.php");
-    }
-}
-?>
-=======
-
 
 use DAO\TicketsDAO as TicketsDAO;
 
@@ -34,4 +22,3 @@ class TicketsController
         require_once(VIEWS_PATH . "TicketsView.php");
     }
 }
->>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
