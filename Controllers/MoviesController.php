@@ -6,7 +6,7 @@ use DAO\MoviesDAO as MoviesDAO;
 use Models\Movies as Movies;
 use Exception;
 use API\IMDBController as IMDBController;
-use Utilities\ApiResponse;
+use Util\ApiResponse;
 
 
 class MoviesController 

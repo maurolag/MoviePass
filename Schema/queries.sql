@@ -9,6 +9,8 @@ select * from genders; */
 
 DELIMITER $$
 
+use Moviepassdb;
+
 CREATE PROCEDURE GetOrdersByUser(UserId int) 
 BEGIN
 

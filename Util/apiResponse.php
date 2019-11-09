@@ -2,6 +2,8 @@
 
 namespace Util;
 
+use Api\ApiController as APIController;
+
 class ApiResponse
 {
     public static function HomologatesApiResponse($ApiRequest)

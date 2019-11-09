@@ -41,7 +41,7 @@ class RegisterController
 
             try {
                 $password = Hash::Hashing($password); //hashing password
-                $selectedUser = $this->userDAO->Register(new User($email, $user, $password, $birthdate, $gender, $photo));
+                $selectedUser = $this->userDAO->Add(new User($email, $user, $password, $birthdate, $gender, $photo));
 
                 if ($selectedUser != null) {
                     $_SESSION['User'] = $selectedUser[0];

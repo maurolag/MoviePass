@@ -54,7 +54,7 @@ class ProfileController
                                 null,
                                 $_SESSION['User']['Birthdate'],
                                 $_SESSION['User']['IdGender'],
-                                $this->ValidateData($_POST["photo"]));
+                                Validate :: ValidateData($_POST["photo"]));
             
             try {
                 $result = $this->userDAO->UpdateUser($user);
