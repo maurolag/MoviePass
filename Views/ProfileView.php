@@ -15,10 +15,17 @@ use DAO\Gender as Gender;
                 <form action="<?php echo FRONT_ROOT ?>Profile/Index" method="post">
                     <div class="form-row">
                         <div class="form-group col-md-12 text-center">
+<<<<<<< HEAD
                             <img id="imgProfile" src="<?php echo $_SESSION['User']['Photo']?>" alt="Avatar" height="120" width="120">
                         </div>
                         <div class="form-group col-md-12 text-center">
                             <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#imageProfileModal"><i class="fas fa-upload"></i></i>&nbspCambiar Imagen</button>
+=======
+                            <img id="imgProfile" src="<?php echo FRONT_ROOT.VIEWS_PATH?>img/profileej.png" alt="Avatar" height="120" width="120">
+                        </div>
+                        <div class="form-group col-md-12 text-center">
+                            <button type="button" class="btn btn-dark"><i class="fas fa-upload"></i></i>&nbspCambiar Imagen</button>
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
                         </div>
                     </div>
                     <div class="form-row">
@@ -31,6 +38,32 @@ use DAO\Gender as Gender;
                             <input type="text" name="UserName" value=<?php echo ($_SESSION['User']['UserName']) ?> class="form-control" id="inputNombre" placeholder="Nombre" required>
                         </div>
                     </div>
+<<<<<<< HEAD
+=======
+                    <!-- <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputPais">Pais</label>
+                            <select id="inputPais" class="form-control">
+                                <option selected>Elije uno</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputProvincia">Provincia</label>
+                            <select id="inputProvincia" class="form-control" disabled>
+                                <option selected>Elije una</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCiudad">Ciudad</label>
+                            <select id="inputCiudad" class="form-control" disabled>
+                                <option selected>Elije una</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div> -->
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="inputDate"><i style="color: red;">&#42&nbsp</i>Fecha de Nacimiento</label>
@@ -53,7 +86,10 @@ use DAO\Gender as Gender;
                             <label class="custom-control-label" for="OptionOtros">Otros</label>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <?php require_once("alertMessage.php");?>
+=======
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
                     <button type="submit" class="btn btn-success"><i class="fas fa-save"></i>&nbspGuardar cambios</button>
                     <a type="submit" href="<?php echo FRONT_ROOT ?>Home/View" class="btn btn-primary"><i class="fas fa-arrow-left"></i>&nbspVolver</a>
                 </form>
@@ -63,6 +99,7 @@ use DAO\Gender as Gender;
         <!-- Fin Index -->
     </div>
 
+<<<<<<< HEAD
     <!-- Modal -->
     <div class="modal fade" id="imageProfileModal" tabindex="-1" role="dialog" aria-labelledby="imageProfileModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -135,6 +172,8 @@ use DAO\Gender as Gender;
     <!-- Fin Modal -->
 
 
+=======
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 </body>
 
 </html>
@@ -151,6 +190,7 @@ use DAO\Gender as Gender;
         border: 4px solid black;
         background-color: rgba(52, 57, 64, 0.5);
     }
+<<<<<<< HEAD
 
     .imgOption {
         border-radius: 50%;
@@ -163,4 +203,6 @@ use DAO\Gender as Gender;
         border: none;
         margin-bottom: 5%;
     }
+=======
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 </style>

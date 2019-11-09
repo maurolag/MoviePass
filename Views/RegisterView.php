@@ -23,7 +23,11 @@ use DAO\Gender as Gender;
                             </div>
                             <div class="textbox">
                                 <i class="fas fa-pen"></i>
+<<<<<<< HEAD
                                 <input type="text" placeholder="Nombre" name="userName" required value="">
+=======
+                                <input type="text" placeholder="Nombre" name="user" required value="">
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
                             </div>
                             <div class="textbox">
                                 <i class="fas fa-lock"></i>

@@ -5,7 +5,11 @@ html, body {
 }
 body {
      font-family: 'Montserrat', sans-serif;
+<<<<<<< HEAD
      background: url(../img/BackGround.jpg) no-repeat center center fixed;
+=======
+     background: url(../img/Background.jpg) no-repeat center center fixed;
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
      -webkit-background-size: cover;
         -moz-background-size: cover;
           -o-background-size: cover;

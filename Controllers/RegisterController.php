@@ -2,13 +2,24 @@
 
 namespace Controllers;
 
+<<<<<<< HEAD
 require_once("BaseController.php");
+=======
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 
 use DAO\UserDAO as UserDAO;
 use Exception;
 use Models\User as User;
+<<<<<<< HEAD
 
 class RegisterController extends BaseController
+=======
+use Util\Validate as Validate;
+use Util\Hash as Hash;
+use Controllers\HomeController as HomeController;
+
+class RegisterController 
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 {
     private $userDAO;
 
@@ -20,6 +31,7 @@ class RegisterController extends BaseController
     public function Index()
     {
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
+<<<<<<< HEAD
             
             $email = $this->ValidateData($_POST["email"]);
             $userName = $this->ValidateData($_POST["userName"]);
@@ -41,14 +53,32 @@ class RegisterController extends BaseController
             try {
                 $password = BaseController::Hash($password); //hashing password                
                 $selectedUser = $this->userDAO->Add(new User($email, $userName, $password, $birthdate, $gender, $photo));
+=======
+            $email = Validate :: ValidateData($_POST["email"]);
+            $user = Validate :: ValidateData($_POST["user"]);
+            $password = Validate :: ValidateData($_POST["password"]);
+            $passwordConfirmed = Validate :: ValidateData($_POST["passwordConfirmed"]);
+            $birthdate = Validate :: ValidateData($_POST["birthdate"]);
+            $gender = Validate :: ValidateData($_POST["gender"]);
+
+            $this->ValidateRegister($email, $user, $password, $passwordConfirmed, $birthdate);
+
+            try {
+                $password = Hash::Hashing($password); //hashing password
+                $selectedUser = $this->userDAO->Register(new User($email, $user, $password, $birthdate, $gender));
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 
                 if ($selectedUser != null) {
                     $_SESSION['User'] = $selectedUser[0];
                     $_SESSION['isLogged'] = true;
                 }                
 
+<<<<<<< HEAD
                 $this->ShowHomeView();
 
+=======
+                HomeController :: Index();
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
             } catch (Exception $e) {
                 $this->View();
             }
@@ -57,7 +87,11 @@ class RegisterController extends BaseController
         }
     }
 
+<<<<<<< HEAD
     private function ValidateRegister($email, $userName, $password, $passwordConfirmed, $birthdate)
+=======
+    private function ValidateRegister($email, $user, $password, $passwordConfirmed, $birthdate)
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
     {
         if ($password !== $passwordConfirmed)
             $this->View("Las contraseñas no coinciden");

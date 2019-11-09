@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <?php 
 if(isset($alertType)){
@@ -34,6 +35,13 @@ if(isset($alertType)){
 
 
 
+=======
+<span id="alert" class="alert alert-danger alert-dismissible fade show"><?php if (isset($alertMessage)) echo $alertMessage ?>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</span>
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 
 <script>
     $(document).ready(function() {

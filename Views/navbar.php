@@ -30,7 +30,11 @@
 
               echo '<ul class="nav navbar-nav ml-auto">
                     <img src="'; 
+<<<<<<< HEAD
               echo  $_SESSION['User']['Photo'].'" width="30" height="30" class="d-inline-block align-top">
+=======
+              echo  FRONT_ROOT.VIEWS_PATH.'img/profileej.png" width="30" height="30" class="d-inline-block align-top">
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">';echo $_SESSION['User']['UserName'] . '</a>
                       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

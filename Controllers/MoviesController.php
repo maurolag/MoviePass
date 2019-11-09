@@ -6,11 +6,18 @@ use DAO\MoviesDAO as MoviesDAO;
 use Models\Movies as Movies;
 use Exception;
 use API\IMDBController as IMDBController;
+<<<<<<< HEAD
 
 
 require_once("BaseController.php");
 
 class MoviesController extends BaseController
+=======
+use Utilities\ApiResponse;
+
+
+class MoviesController 
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 {
 
 	private $moviesDao;
@@ -35,12 +42,20 @@ class MoviesController extends BaseController
     
     public function GetNowPlayingMoviesFromApi()
     {
+<<<<<<< HEAD
         return $this->HomologatesApiResponse('/movie/now_playing');
+=======
+        return ApiResponse::HomologatesApiResponse('/movie/now_playing');
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
     }
 
     public function GetPosterFromApi($movieIdIMDB)
     {
+<<<<<<< HEAD
         $respuesta = $this->HomologatesApiResponse('/movie/' . $movieIdIMDB. '/images');
+=======
+        $respuesta = ApiResponse::HomologatesApiResponse('/movie/' . $movieIdIMDB. '/images');
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 		return IMG_LINK . $respuesta['posters'][0]['file_path'];
     }
 
@@ -52,7 +67,11 @@ class MoviesController extends BaseController
 
 		$apiMovie=array();
 
+<<<<<<< HEAD
 		$arrayToDecode = $this->HomologatesApiResponse('/movie/now_playing');
+=======
+		$arrayToDecode = ApiResponse::HomologatesApiResponse('/movie/now_playing');
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
 
 		foreach ($arrayToDecode["results"] as $valuesArray) 
 		{

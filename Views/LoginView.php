@@ -10,7 +10,11 @@
                               <div class="login-box">
                                    <div class="textbox">
                                         <i class="fas fa-user"></i>
+<<<<<<< HEAD
                                         <input type="text" required placeholder="E-mail" name="email" value="">
+=======
+                                        <input type="text" required placeholder="E-mail" name="user" value="">
+>>>>>>> a629bcf28b60327dfdc257b544180e5a16d03369
                                    </div>
 
                                    <div class="textbox">
